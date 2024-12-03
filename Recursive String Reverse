@@ -1,0 +1,15 @@
+class Main {
+    public static void reverseString(String str){
+        if (str.isEmpty()){
+        return;
+    }
+    reverseString(str.substring(1));
+    System.out.print(str.charAt(0));
+    }
+    public static void main(String[] args) {
+        String testString = "DESSERTS";
+        System.out.println("Original String: " + testString);
+        System.out.print("Reveresed String: ");
+        reverseString(testString);
+    }
+}
